@@ -51,7 +51,7 @@ for (let i = 0; i < posts.length; i++) {
             <section class="post-info">
                 <div class="interactions">
                     <img src="/images/icon-heart.png" class="btn btn-heart" id="heart-${i}">
-                    <img src="/images/icon-comment.png" class="btn" id="comment-${i}">
+                    <img src="/images/icon-comment.png" class="btn">
                     <img src="/images/icon-dm.png" class="btn">
                 </div>
                 <div>
@@ -81,14 +81,5 @@ for (let i = 0; i < posts.length; i++) {
         }
         
     likesCount.textContent = `${posts[i].likes} likes`;
-    })
-}
-
-// comment //
-for (let i = 0; i < posts.length; i++) {
-    const newComment = document.getElementById(`comment-${i}`)
-    
-    newComment.addEventListener("click", function() {
-        
     })
 }
